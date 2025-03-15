@@ -39,6 +39,8 @@ android {
     kapt {
         correctErrorTypes = true
     }
+
+    dataBinding.enable = true
 }
 
 dependencies {
@@ -58,6 +60,7 @@ dependencies {
 
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
+    implementation(libs.androidx.hilt.navigation.fragment)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
