@@ -23,3 +23,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "MyLearning"
 include(":app")
+include(":login")
+include(":register")
+include(":common")
