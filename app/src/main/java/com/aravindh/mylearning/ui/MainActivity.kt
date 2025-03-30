@@ -6,25 +6,20 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.aravindh.mylearning.R
 import com.aravindh.mylearning.databinding.ActivityMainBinding
-import com.aravindh.register.RegisterActivity
+import com.aravindh.users.UsersActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    //private val viewModel: MainViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        //startActivity(Intent(this, LoginActivity::class.java))
-        startActivity(Intent(this, RegisterActivity::class.java))
+
+        startActivity(Intent(this, UsersActivity::class.java))
     }
 
-    override fun onResume() {
-        super.onResume()
-        //viewModel.startCountDown()
-    }
 }
