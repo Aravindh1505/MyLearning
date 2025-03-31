@@ -15,7 +15,7 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object ApiClient {
 
-    val BASE_URL = "https://dummyjson.com/"
+    private const val BASE_URL = "https://dummyjson.com/"
 
 
     @Provides

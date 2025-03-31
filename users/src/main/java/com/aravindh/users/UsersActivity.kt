@@ -24,6 +24,14 @@ class UsersActivity : AppCompatActivity() {
             insets
         }
 
+        viewModel.users.observe(this) { users ->
+            println("UsersActivity $users")
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
         viewModel.getUsers()
+
     }
 }
