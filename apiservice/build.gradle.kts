@@ -32,11 +32,9 @@ android {
 }
 
 dependencies {
-    implementation(libs.hilt.android)
+    implementation(libs.bundles.hilt)
     kapt(libs.hilt.compiler)
-    implementation(libs.androidx.hilt.navigation.fragment)
 
+    implementation(libs.bundles.retrofit)
     api(libs.retrofit)
-    implementation(libs.converter.gson)
-    implementation(libs.logging.interceptor)
 }

@@ -13,9 +13,9 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-object ApiClient {
+object NetworkModule {
 
-    private const val BASE_URL = "https://dummyjson.com/"
+    const val BASE_URL = "https://dummyjson.com/"
 
 
     @Provides
